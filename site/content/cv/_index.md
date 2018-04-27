@@ -4,7 +4,7 @@ Type: cv
 title: My Resume, by Derek B. Odegard
 
 ---
-The web evolved at a dizzying pace during this period, and I spent much of my time trying to keep up. HTML tables. Single-pixel gifs. HTML frames. Early versions of CSS and JavaScript.
+The web evolved at a dizzying pace during this period, and I spent much of my time trying to keep up. HTML tables. Single-pixel gifs. HTML![](/uploads/2018/04/27/rainbow-background-images-8.jpg) frames. Early versions of CSS and JavaScript.
 
 Before long, mastery of all of this became a desirable skill, and I made the leap to working as an HTML coder at the St. Louis office of Weber Shandwick public relations.
 
