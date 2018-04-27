@@ -1,0 +1,13 @@
+{{ partial "header" . }}
+
+<header class="page">
+    <section>
+        <h1>{{ .Title }}</h1>
+    </section>
+</header>
+
+<main class="container">
+    {{ block "main" . }} {{ end }}
+</main>
+
+{{ partial "footer" . }}

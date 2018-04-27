@@ -1,0 +1,12 @@
+{{ define "title" }}
+    {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+    <article class="story">
+        {{ .Content }}
+    </article>
+    <article class="resume">
+        {{ partial "work-history" . }}
+    </article>
+{{ end }}
