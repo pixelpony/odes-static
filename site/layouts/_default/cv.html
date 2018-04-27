@@ -1,0 +1,19 @@
+{{ partial "header" . }}
+
+<header class="page">
+    <section>
+        <div class="nav"><a class="to-home" href="/">⇡</a></div>
+        <h1>{{ .Title }}</h1>
+    </section>
+</header>
+
+<main class="container">
+    <article class="story">
+        {{ .Content }}
+    </article>
+    <article class="resume">
+        {{ partial "work-history" . }}
+    </article>
+</main>
+
+{{ partial "footer" . }}
