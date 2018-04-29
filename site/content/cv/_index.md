@@ -2,13 +2,14 @@
 Title: My Resume, by Derek B. Odegard
 Type: cv
 title: My Resume, by Derek B. Odegard
+draft: true
 
 ---
 The web evolved at a dizzying pace during this period, and I spent much of my time trying to keep up. HTML tables. Single-pixel gifs. HTML frames. Early versions of CSS and JavaScript.
 
 Before long, mastery of all of this became a desirable skill, and I made the leap to working as an HTML coder at the St. Louis office of Weber Shandwick public relations.
 
-### Getting Started!?!
+### Getting Started
 
 One day in late 1994, I noticed that the <abbr>PC</abbr>s at McDonnell Douglas were connected to the Internet. Netscape 1.0 was still in beta, page layout was impractical because HTML tables and CSS were unavailable, and only 12% of US households were connected to the Internet, mostly using dialup. But I was smitten. I was fortunate to have time to pursue my own interests, and I happily poured myself into learning all I could about building compelling hypertext documents and figuring out how to serve them up to my co-workers.
 
