@@ -1,8 +1,6 @@
 ---
 Title: My Resume, by Derek B. Odegard
 Type: cv
-title: My Resume, by Derek B. Odegard
-draft: true
 
 ---
 The web evolved at a dizzying pace during this period, and I spent much of my time trying to keep up. HTML tables. Single-pixel gifs. HTML frames. Early versions of CSS and JavaScript.
