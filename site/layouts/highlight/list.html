@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <article class="site-overview">
+        {{ range (.Data.Pages.ByWeight) }}
+            <h2>{{.Title}} <span>&middot; {{.Params.role}}</span></h2>
+            <div class="thumbnail"><img src="{{.Params.thumbnail}}" /></div>
+            <div class="description">
+                {{.Content}}
+            </div>
+        {{ end }}
+    </article>
+{{ end }}

@@ -26,20 +26,42 @@ html {
 body {
     padding: 0;
     margin: 0;
-    font-family: 'charter-regular';
-    background: white url(/img/p5.png) top left;
+    font-family: 'charter';
+    // background: white url(/img/p5.png) top left;
 
     font-size: 1rem;
     line-height: 1.5;
     color: #000;
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-        background-image: url(/img/p5_@2X.png);
-        background-size: 8px 8px;
-    }
+    // @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    //     background-image: url(/img/p5_@2X.png);
+    //     background-size: 8px 8px;
+    // }
 
     @media print { }
 }
+
+.site-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    width: 50rem;
+    max-width: 90%;
+    margin: 1rem auto 0;
+    a {
+        text-decoration: none;
+        padding: 3px;
+        padding-bottom: 3px;
+        color: black;
+        &:hover {
+            // text-decoration: underline;
+            background: #eee;
+            border-bottom: 2px solid #c33;
+        }
+    }
+}
+
 
 /* ELEMENT RESETS */
 h1, h2, h3, h4 {
@@ -71,6 +93,9 @@ main.container {
     justify-content: flex-start;
     align-items: flex-start;
     min-height: 25rem;
+    background: rgba(255,255,255, .4);
+    padding: 1rem;
+    // border-left: 1px solid rgba(180,180,180,.5);
 
     article.resume {
         order: 2;
@@ -86,10 +111,14 @@ main.container {
 
 
 header.page {
-    margin: 1rem auto;
+    margin: 1rem auto 0;
 
     section {
         padding: .5rem 0 0;
+        background: rgba(255,255,255, .4);
+        padding: 1rem;
+        padding: 0 1rem;
+        // border-left: 1px solid rgba(180,180,180,.5);
         position: relative;
     }
     .nav {
@@ -119,12 +148,18 @@ header.page {
         }
     }
     h1 {
-        font-family: 'charter-regular';
+        font-family: 'charter';
+        font-weight: bold;
         font-size: 1.75rem;
         line-height: 2.6rem;
+        font-size: 60px;
+        line-height: 74px;
+        font-weight: normal;
+        // font-style: italic;
         margin: 0 auto;
         padding: 0;
         text-shadow: 0 0 0 #000, 0 0 1px transparent;
+        text-rendering: optimizeLegibility;
     }
 
     p{
@@ -167,22 +202,60 @@ main.container {
     }
 }
 
-article.story {
-
-    font-family: 'charter-regular';
+article {
+    font-family: 'charter';
     font-weight: normal;
     h2, h3 {
-        font-family: 'charter-bold';
+        font-family: 'charter';
         font-weight: bold;
-        margin-bottom: .5rem;
+        margin-top: 1rem;
+        // margin-bottom: .5rem;
     }
     h2 {
         font-size: 1.25rem;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
+    }
+    h2:first-child,
+    h3:first-child {
+        margin-top: 0;
+
     }
     h3 {
         font-size: 1rem;
+        margin: 0;
+        padding: 0;
     }
+    p {
+        margin-bottom: .5rem;
+    }
+
+    @media (min-width: 650px) {
+        p {
+            margin: 0;
+            text-indent: 1.25rem;
+        }
+
+        p:first-child,
+        h2 + p,
+        h3 + p {
+            text-indent: 0;
+        }
+    }
+    @media print {
+        p {
+            margin: 0;
+            text-indent: 1.25rem;
+        }
+        p:first-child,
+        h2 + p,
+        h3 + p {
+            text-indent: 0;
+        }
+    }
+}
+
+article.story {
+
 
 
     @media (min-width : 500px) {
@@ -197,47 +270,21 @@ article.story {
     @media print {
     }
 
-    .era {
-        margin-bottom: 1rem;
-        border: 0 none;
 
-        @media (min-width : 500px) {
-        }
 
-        @media print {
-        }
-    }
+}
 
-    h3 {
-        margin: 0;
-        padding: 0;
-        margin-top: 1rem;
+article.site-overview {
+    width: 35rem;
+    // border-radius: 5px;
+    img {
+        max-width: 25%;
+        float: right;
+        margin: 0 0 .75rem .75rem;
     }
-    p {
-        margin-bottom: .5rem;
+    h2 span {
+        color: #999;
     }
-
-    @media (min-width: 650px) {
-        p {
-            margin: 0;
-            text-indent: 1.25rem;
-        }
-        p:first-child,
-        h3 + p {
-            text-indent: 0;
-        }
-    }
-    @media print {
-        p {
-            margin: 0;
-            text-indent: 1.25rem;
-        }
-        p:first-child,
-        h3 + p {
-            text-indent: 0;
-        }
-    }
-
 }
 
 article.resume {
