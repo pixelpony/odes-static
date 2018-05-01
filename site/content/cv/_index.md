@@ -1,10 +1,9 @@
 ---
-
 Title: My Resume, by Derek B. Odegard
 Type: cv
+title: My Resume, by Derek B. Odegard
 
 ---
-
 Products I've helped shape
 
 
